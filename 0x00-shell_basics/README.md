@@ -15,3 +15,8 @@
 14-copy_html :Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 100-lets_move :Create a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
 101-clean_emacs :deletes all files in the current working directory that end with the character ~.
+103-commas :Write a command that lists all the files and directories of the current directory :
+	x: Displays the output in multiple columns. It fills the columns 
+	a: Includes hidden files and directories in the listing. Hidden files and directories start with a dot
+	m: Lists the files and directories separated by commas (,) instead of the default newline.
+	p: Appends a slash (/) at the end of directory names to easily distinguish them from regular files.
