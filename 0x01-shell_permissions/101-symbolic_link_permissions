@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff _hello
+chown $(stat -c '%U' _hello):$(stat -c '%G' _hello) _hello
