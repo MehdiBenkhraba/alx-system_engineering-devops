@@ -1,2 +1,2 @@
 #!/bin/bash
-decimal=$DECIMAL; hexadecimal=$(printf "%x" $decimal); echo $hexadecimal
+decimal=$DECIMAL; while [ $decimal -ne 0 ]; do remainder=$((decimal % 16)); hexadecimal="${remainder}${hexadecimal}"; decimal=$((decimal / 16)); done; echo $hexadecimal
